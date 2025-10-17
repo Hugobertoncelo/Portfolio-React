@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
 import nyc from "../../images/nyc.png";
-import { FaCode } from "react-icons/fa";
+import { FaCode, FaGlobe } from "react-icons/fa";
 export default function ProjectPage() {
   return (
     <section className="home-section">
@@ -39,24 +39,28 @@ export default function ProjectPage() {
                             >
                               <div className="projectContent">
                                 <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                                  New Year CountDown
+                                  Ainda em Construção
                                 </h5>
                                 <img src={nyc} alt={nyc} />
                                 <div className="project--showcaseBtn">
                                   <a
-                                    href={
-                                      "https://github.com/MD-MAFUJUL-HASAN/Web_Programming/tree/main/New-Year-Countdown"
-                                    }
+                                    href="https://github.com/hugobertoncelo"
                                     target="_blank"
                                     rel="noreferrer"
-                                    className={"iconBtn"}
-                                    aria-labelledby={`code`}
+                                    className="iconBtn"
+                                    aria-labelledby="code"
                                   >
-                                    <FaCode
-                                      id={`code`}
-                                      className={"icon"}
-                                      aria-label="Code"
-                                    />
+                                    <FaCode id="code" className="icon" aria-label="Code" />
+                                  </a>
+
+                                  <a
+                                    href="https://github.com/hugobertoncelo"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="iconBtn"
+                                    aria-labelledby="site"
+                                  >
+                                    <FaGlobe id="site" className="icon" aria-label="Website" />
                                   </a>
                                 </div>
                               </div>
@@ -69,13 +73,7 @@ export default function ProjectPage() {
                                     fontWeight: 600,
                                   }}
                                 >
-                                  The New Year Countdown Project is more than
-                                  just a celebration; it's a testament to the
-                                  human spirit and our shared aspirations for a
-                                  brighter future. So, mark your calendars and
-                                  get ready to be part of this global
-                                  extravaganza as we count down to a new year
-                                  filled with endless possibilities.
+                                  Descrição do projeto... ainda em construção
                                 </p>
                               </h6>
                               <div
