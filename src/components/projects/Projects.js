@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
 import nyc from "../../images/nyc.png";
-import { FaCode } from "react-icons/fa";
+import { FaCode, FaGlobe } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
 
@@ -51,6 +51,15 @@ export default function Projects() {
                           className={"icon"}
                           aria-label="Code"
                         />
+                      </a>
+                      <a
+                        href="https://github.com/hugobertoncelo"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="iconBtn"
+                        aria-labelledby="site"
+                      >
+                        <FaGlobe id="site" className="icon" aria-label="Website" />
                       </a>
                     </div>
                   </div>

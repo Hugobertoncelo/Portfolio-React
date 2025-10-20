@@ -47,12 +47,8 @@ const About = () => {
                 <br />
                 <br />
                 Minha trajetória profissional inclui uma transição da área de
-                mecânica para a tecnologia, o que fortaleceu minha capacidade de
+                mecânica automotiva para a tecnologia, o que fortaleceu minha capacidade de
                 adaptação, resolução de problemas e busca constante por aprendizado. &nbsp;
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks.
-                </b>
                 <br />
                 <br />Busco estar sempre atualizado com as tendências do setor e
                 contribuir em projetos que gerem impacto real, valorizando a
