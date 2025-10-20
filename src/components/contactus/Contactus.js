@@ -46,7 +46,7 @@ export default function Contactus() {
           <Row>
             <Col
               md={12}
-              className="certificate-description d-flex justify-content-start"
+              className="certificate-description d-flex justify-content-center"
             >
               <Zoom left cascade>
                 <h1 className="aboutme-heading">Entre em contato comigo</h1>

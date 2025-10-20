@@ -9,7 +9,7 @@ export default function AboutmeContainer() {
         <Container fluid className="home-about-section" id="about">
             <Container>
                 <Row>
-                    <Col md={12} className="home-about-description d-flex justify-content-start">
+                    <Col md={12} className="home-about-description d-flex justify-content-center">
                         <Zoom left cascade>
                             <h1 className='aboutme-heading'>
                                 Sobre mim
