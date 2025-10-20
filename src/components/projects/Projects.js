@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
-import nyc from "../../images/nyc.png";
+import delivery from "../../images/projects/delivery.png";
 import { FaCode, FaGlobe } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
@@ -33,13 +33,13 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      Ainda em Construção
+                      Delivery Ki Delícia
                     </h5>
-                    <img src={nyc} alt={nyc} />
+                    <img src={delivery} alt={delivery} />
                     <div className="project--showcaseBtn">
                       <a
                         href={
-                          "https://github.com/hugobertoncelo"
+                          "https://github.com/Hugobertoncelo/Delivery"
                         }
                         target="_blank"
                         rel="noreferrer"
@@ -53,7 +53,7 @@ export default function Projects() {
                         />
                       </a>
                       <a
-                        href="https://github.com/hugobertoncelo"
+                        href="https://hugobertoncelo.github.io/Delivery/"
                         target="_blank"
                         rel="noreferrer"
                         className="iconBtn"
@@ -72,7 +72,7 @@ export default function Projects() {
                         fontWeight: 600,
                       }}
                     >
-                      colocar a descrição do projeto... ainda em construção
+                      Um aplicativo de delivery moderno e responsivo, que permite navegar por categorias, visualizar produtos e fazer pedidos de forma rápida e prática. Desenvolvido com foco em usabilidade, design limpo e experiência do usuário.
                     </p>
                   </h6>
                   <div
@@ -83,7 +83,7 @@ export default function Projects() {
                       fontWeight: 600,
                     }}
                   >
-                    HTML, CSS, JavaScript
+                    JavaScript
                   </div>
                 </div>
               </Fade>

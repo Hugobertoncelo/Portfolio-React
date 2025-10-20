@@ -3,9 +3,11 @@ import Particle from "../../Particle";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
-import nyc from "../../images/nyc.png";
 import { FaCode, FaGlobe } from "react-icons/fa";
 import CategoryBar from "../../components/CategoryBar";
+import delivery from "../../images/projects/delivery.png";
+import stopwatch from "../../images/projects/cronometro.png";
+import drawer from "../../images/projects/sorteio.png";
 
 export default function ProjectPage() {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
@@ -13,30 +15,30 @@ export default function ProjectPage() {
   const projects = [
     {
       id: 1,
-      title: "Projeto HTML",
-      img: nyc,
-      lang: "HTML",
-      desc: "Projeto feito com HTML e CSS",
-      repoLink: "https://github.com/hugobertoncelo",
-      siteLink: "https://seusite.com/projeto-html",
+      title: "Delivery Ki Delícia",
+      img: delivery,
+      lang: "JavaScript",
+      desc: "Um aplicativo de delivery moderno e responsivo, que permite navegar por categorias, visualizar produtos e fazer pedidos de forma rápida e prática. Desenvolvido com foco em usabilidade, design limpo e experiência do usuário.",
+      repoLink: "https://github.com/Hugobertoncelo/Delivery",
+      siteLink: "https://hugobertoncelo.github.io/Delivery/",
     },
     {
       id: 2,
-      title: "App React",
-      img: nyc,
-      lang: "React",
-      desc: "Projeto moderno com React.js",
-      repoLink: "https://github.com/hugobertoncelo",
-      siteLink: "https://seusite.com/app-react",
+      title: "Relógio Digital",
+      img: stopwatch,
+      lang: "HTML e CSS",
+      desc: "Um relógio digital moderno e funcional, que exibe hora, minutos e segundos em tempo real. Desenvolvido com foco em precisão, design minimalista e interface intuitiva",
+      repoLink: "https://github.com/Hugobertoncelo/Relogio-Digital",
+      siteLink: "https://hugobertoncelo.github.io/Relogio-Digital/",
     },
     {
       id: 3,
-      title: "Script JS",
-      img: nyc,
-      lang: "JavaScript",
-      desc: "Jogo desenvolvido com JavaScript puro",
-      repoLink: "https://github.com/hugobertoncelo",
-      siteLink: "https://seusite.com/script-js",
+      title: "Sorteador",
+      img: drawer,
+      lang: "HTML e CSS",
+      desc: "Um aplicativo simples e interativo que gera números aleatórios de forma rápida e prática. Desenvolvido com foco em usabilidade, lógica de programação e interface intuitiva, ideal para demonstrar habilidades em JavaScript/HTML e CSS.",
+      repoLink: "https://github.com/Hugobertoncelo/Dev-Sorteio",
+      siteLink: "https://hugobertoncelo.github.io/Dev-Sorteio/",
     },
   ];
 
