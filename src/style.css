@@ -1172,7 +1172,7 @@ html {
   padding: 2rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .blog--viewAll a {
   text-decoration: none;
