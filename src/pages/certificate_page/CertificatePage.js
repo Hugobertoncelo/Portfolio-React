@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
-import senai from "../../images/senai.jpg";
+import senai from "../../images/certificates/senai.jpg";
 import Particle from "../../Particle";
 import CategoryBar from "../../components/CategoryBar";
 
