@@ -58,7 +58,7 @@ export default function CertificatePage() {
         <Container className="home-content">
           <div
             className="d-flex justify-content-center"
-            style={{ backgroundColor: "#fbd9ad" }}
+            style={{ backgroundColor: "#fbd9ad", borderRadius: "15px" }}
           >
             <Zoom left cascade>
               <h1 style={{ color: "rgb(134 61 176)" }}>CERTIFICADOS</h1>
