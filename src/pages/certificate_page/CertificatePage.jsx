@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
 import senai from "../../images/certificates/senai.jpg";
 import Particle from "../../Particle";
 import CategoryBar from "../../components/CategoryBar";
+import ScrollToTopButton from "../../components/Button/ScrollToTopButton";
 
 export default function CertificatePage() {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   const certificates = [
     {
@@ -128,6 +133,8 @@ export default function CertificatePage() {
           </Container>
         </Container>
       </Container>
+
+      <ScrollToTopButton />
     </section>
   );
 }

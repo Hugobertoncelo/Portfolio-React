@@ -154,7 +154,7 @@ html {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: rgb(59, 38, 77, 0.8) !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -1359,7 +1359,7 @@ html {
 }
 
 .input-class {
-  border: 4px solid #fbd9ad;
+  border: 4px solid rgb(59, 38, 77);
   background-color: #150d23;
   color: #fbd9ad;
   font-weight: 500;

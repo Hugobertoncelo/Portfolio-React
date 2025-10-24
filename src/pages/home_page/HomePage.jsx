@@ -10,6 +10,7 @@ import { FaLinkedinIn, FaWhatsapp, FaGoogle } from "react-icons/fa";
 import Certification from "../../components/certificate/Certification";
 import Projects from "../../components/projects/Projects";
 import Contactus from "../../components/contactus/Contactus";
+import ScrollToTopButton from "../../components/Button/ScrollToTopButton";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
               <div className="typing-homeclass">
                 <Typing />
               </div>
+
               <div className="sociallink-home">
                 <ul className="homeaboutsociallinks">
                   <li className="socialicons">
@@ -44,7 +46,7 @@ export default function Home() {
                       href="https://github.com/hugobertoncelo"
                       target="_blank"
                       rel="noreferrer"
-                      className="iconcolour  homesocialicons"
+                      className="iconcolour homesocialicons"
                     >
                       <AiFillGithub />
                     </a>
@@ -54,7 +56,7 @@ export default function Home() {
                       href="https://www.linkedin.com/in/hugobertoncelo"
                       target="_blank"
                       rel="noreferrer"
-                      className="iconcolour  homesocialicons"
+                      className="iconcolour homesocialicons"
                     >
                       <FaLinkedinIn />
                     </a>
@@ -80,7 +82,6 @@ export default function Home() {
                       <FaWhatsapp />
                     </a>
                   </li>
-
                   <li className="socialicons">
                     <a
                       href="mailto:hugobertoncelo@gmail.com/"
@@ -94,6 +95,7 @@ export default function Home() {
                 </ul>
               </div>
             </Col>
+
             <Col md={4} style={{ paddingBottom: 20 }}>
               <div className="img-home-main">
                 <Tilt>
@@ -110,10 +112,13 @@ export default function Home() {
           </Row>
         </Container>
       </Container>
+
       <AboutmeContainer />
       <Certification />
       <Projects />
       <Contactus />
+
+      <ScrollToTopButton />
     </section>
   );
 }

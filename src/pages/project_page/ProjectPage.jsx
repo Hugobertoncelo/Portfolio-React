@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Particle from "../../Particle";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
@@ -7,9 +7,15 @@ import CategoryBar from "../../components/CategoryBar";
 import ProjectCard from "./ProjectCard";
 import { projects } from "./projectsData";
 import NoDeployProjects from "./NoDeployProjects";
+import ScrollToTopButton from "../../components/Button/ScrollToTopButton";
+import ShowMoreButtons from "../../components/Button/ShowMoreButtons";
 
 export default function ProjectPage() {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   const categories = [
     "Todos",
@@ -48,22 +54,26 @@ export default function ProjectPage() {
           />
 
           <Container fluid className="certificate-section" id="about">
-            <Container>
-              <Row>
-                {filteredProjects.map((project) => (
-                  <Col key={project.id} md={4} sm={12} className="mt-5">
+            <Row>
+              <ShowMoreButtons
+                items={filteredProjects}
+                itemsPerPage={3}
+                renderItem={(project) => (
+                  <Col key={project.id} md={10} sm={12} className="mt-5">
                     <Fade bottom>
                       <ProjectCard project={project} />
                     </Fade>
                   </Col>
-                ))}
-              </Row>
-            </Container>
+                )}
+              />
+            </Row>
           </Container>
 
           <NoDeployProjects />
         </Container>
       </Container>
+
+      <ScrollToTopButton />
     </section>
   );
 }

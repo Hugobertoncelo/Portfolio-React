@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaCode, FaDatabase } from "react-icons/fa";
 
 export default function NoDeployCard({ project }) {
-  const [hoveredIcon, setHoveredIcon] = useState(null);
-
   return (
     <div
       className="singleProject"
@@ -23,7 +21,6 @@ export default function NoDeployCard({ project }) {
         position: "relative",
       }}
     >
-      {/* Nome do projeto sempre visível */}
       <h5
         style={{
           color: "#fbd9ad",
@@ -35,13 +32,13 @@ export default function NoDeployCard({ project }) {
         {project.title}
       </h5>
 
-      {/* Ícones lado a lado */}
       <div style={{ display: "flex", gap: "50px" }}>
-        {/* Front-End */}
         <div
-          onMouseEnter={() => setHoveredIcon("front")}
-          onMouseLeave={() => setHoveredIcon(null)}
-          style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
         >
           <a
             href={project.frontEndLink || project.repoLink}
@@ -57,18 +54,23 @@ export default function NoDeployCard({ project }) {
           >
             <FaCode />
           </a>
-          {hoveredIcon === "front" && (
-            <span style={{ color: "#fbd9ad", marginTop: "5px", fontWeight: "600" }}>
-              Front-End
-            </span>
-          )}
+          <span
+            style={{
+              color: "#fbd9ad",
+              marginTop: "5px",
+              fontWeight: "600",
+            }}
+          >
+            Front-End
+          </span>
         </div>
 
-        {/* Back-End */}
         <div
-          onMouseEnter={() => setHoveredIcon("back")}
-          onMouseLeave={() => setHoveredIcon(null)}
-          style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
         >
           <a
             href={project.backEndLink || project.repoLink}
@@ -84,11 +86,15 @@ export default function NoDeployCard({ project }) {
           >
             <FaDatabase />
           </a>
-          {hoveredIcon === "back" && (
-            <span style={{ color: "#fbd9ad", marginTop: "5px", fontWeight: "600" }}>
-              Back-End
-            </span>
-          )}
+          <span
+            style={{
+              color: "#fbd9ad",
+              marginTop: "5px",
+              fontWeight: "600",
+            }}
+          >
+            Back-End
+          </span>
         </div>
       </div>
     </div>

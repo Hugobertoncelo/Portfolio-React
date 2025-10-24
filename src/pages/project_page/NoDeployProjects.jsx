@@ -1,22 +1,40 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
 import NoDeployCard from "./NoDeployCard";
+import ShowMoreButtons from "../../components/Button/ShowMoreButtons";
 
 export default function NoDeployProjects() {
   const noDeployProjects = [
     {
-      id: 4,
+      id: 1,
       title: "Campo Minado",
       repoLink: "https://github.com/Hugobertoncelo/Campo-Minato",
-      backLink: "",
+    },
+    {
+      id: 2,
+      title: "Pac-Man",
+      repoLink: "https://github.com/Hugobertoncelo/Pacman-React",
+    },
+    {
+      id: 3,
+      title: "Relógio Digital",
+      repoLink: "https://github.com/Hugobertoncelo/Relogio-Digital",
+    },
+    {
+      id: 4,
+      title: "Sorteador de Números",
+      repoLink: "https://github.com/Hugobertoncelo/Sorteador",
     },
     {
       id: 5,
-      title: "Pac-Man",
-      repoLink: "https://github.com/Hugobertoncelo/Pacman-React",
-      backLink: "",
+      title: "Jogo da Velha",
+      repoLink: "https://github.com/Hugobertoncelo/Jogo-da-Velha",
+    },
+    {
+      id: 6,
+      title: "Calculadora",
+      repoLink: "https://github.com/Hugobertoncelo/Calculadora",
     },
   ];
 
@@ -36,17 +54,11 @@ export default function NoDeployProjects() {
         </Zoom>
       </div>
 
-      <Container>
-        <Row>
-          {noDeployProjects.map((project) => (
-            <Col key={project.id} md={4} sm={12} className="mb-4 mt-4">
-              <Fade bottom>
-                <NoDeployCard project={project} />
-              </Fade>
-            </Col>
-          ))}
-        </Row>
-      </Container>
+      <ShowMoreButtons
+        items={noDeployProjects}
+        itemsPerPage={3}
+        renderItem={(project) => <NoDeployCard project={project} />}
+      />
     </Container>
   );
 }
