@@ -39,14 +39,17 @@ function EducationJourney() {
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<SchoolIcon />}
         >
-          <h4 className="vertical-timeline-element-title">
-            FAESA
-          </h4>
+          <h4 className="vertical-timeline-element-title">FAESA</h4>
           <h4 className="vertical-timeline-element-subtitle mt-2">
             Faculdades Integradas Espírito Santenses
           </h4>
           <p>
-            Graduado em Análise e Desenvolvimento de Sistemas, com formação voltada para o desenvolvimento de softwares, administração de bancos de dados e soluções tecnológicas aplicadas ao mercado. Durante o curso, adquiri experiência prática em programação, análise de requisitos e desenvolvimento de projetos, buscando sempre alinhar teoria e prática para atender às demandas da área de TI.
+            Graduado em Análise e Desenvolvimento de Sistemas, com formação
+            voltada para o desenvolvimento de softwares, administração de bancos
+            de dados e soluções tecnológicas aplicadas ao mercado. Durante o
+            curso, adquiri experiência prática em programação, análise de
+            requisitos e desenvolvimento de projetos, buscando sempre alinhar
+            teoria e prática para atender às demandas da área de TI.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement

@@ -37,7 +37,6 @@ export default function ProjectCard({ project }) {
           className="project--showcaseBtn"
           style={{
             display: "flex",
-            justifyContent: "center",
             gap: "20px",
             marginTop: "15px",
           }}

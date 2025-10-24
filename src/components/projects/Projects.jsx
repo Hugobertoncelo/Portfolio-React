@@ -70,15 +70,24 @@ export default function Projects() {
                         className="project--showcaseBtn"
                         style={{
                           display: "flex",
-                          justifyContent: "center",
                           gap: "10px",
                           marginTop: "10px",
                         }}
                       >
-                        <a href={project.repoLink} target="_blank" rel="noreferrer" className="iconBtn">
+                        <a
+                          href={project.repoLink}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="iconBtn"
+                        >
                           <FaCode className="icon" />
                         </a>
-                        <a href={project.siteLink} target="_blank" rel="noreferrer" className="iconBtn">
+                        <a
+                          href={project.siteLink}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="iconBtn"
+                        >
                           <FaGlobe className="icon" />
                         </a>
                       </div>

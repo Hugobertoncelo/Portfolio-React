@@ -5,7 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import { Link } from "react-router-dom";
 import StarIcon from "@mui/icons-material/Star";
-import JavascriptIcon from '@mui/icons-material/Javascript';
+import JavascriptIcon from "@mui/icons-material/Javascript";
 import Flip from "react-reveal/Flip";
 import { FaReact } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
@@ -41,9 +41,7 @@ function ProjectJourney() {
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<JavascriptIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Delivery
-          </h3>
+          <h3 className="vertical-timeline-element-title">Delivery</h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -65,9 +63,7 @@ function ProjectJourney() {
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<JavascriptIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Spotify
-          </h3>
+          <h3 className="vertical-timeline-element-title">Spotify</h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -101,9 +97,7 @@ function ProjectJourney() {
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<FaReact />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Lista de Contatos
-          </h3>
+          <h3 className="vertical-timeline-element-title">Lista de Contatos</h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -113,9 +107,7 @@ function ProjectJourney() {
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<FaReact />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Lista de Tarefas
-          </h3>
+          <h3 className="vertical-timeline-element-title">Lista de Tarefas</h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -125,9 +117,7 @@ function ProjectJourney() {
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<SiTypescript />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Gerador de Qrcode
-          </h3>
+          <h3 className="vertical-timeline-element-title">Gerador de Qrcode</h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -149,9 +139,7 @@ function ProjectJourney() {
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<JavascriptIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Sorteador
-          </h3>
+          <h3 className="vertical-timeline-element-title">Sorteador</h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -161,9 +149,7 @@ function ProjectJourney() {
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<JavascriptIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Calculadora
-          </h3>
+          <h3 className="vertical-timeline-element-title">Calculadora</h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

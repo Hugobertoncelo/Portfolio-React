@@ -47,9 +47,7 @@ function TechnicalJourney() {
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<ComputerIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-            TYPESCRIPT
-          </h3>
+          <h3 className="vertical-timeline-element-title">TYPESCRIPT</h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

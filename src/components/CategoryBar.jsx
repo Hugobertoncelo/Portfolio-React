@@ -16,4 +16,3 @@ export default function CategoryBar({ selected, onSelect, categories = [] }) {
     </div>
   );
 }
-

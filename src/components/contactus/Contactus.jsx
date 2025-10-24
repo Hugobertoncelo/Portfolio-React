@@ -1,42 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
-import axios from "axios";
-import { useState } from "react";
 import { AiOutlineSend } from "react-icons/ai";
 import { FiPhone, FiAtSign } from "react-icons/fi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import emailjs from "emailjs-com";
 
 export default function Contactus() {
-  const [formData, setFormData] = useState(new FormData());
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!(formData.name && formData.email && formData.message)) {
-      alert("Something went wrong!");
+      alert("Por favor, preencha todos os campos antes de enviar!");
       return;
     }
 
-    try {
-      const response = await axios.post(
-        "http://localhost:5000/api/submitForm",
-        formData
+    emailjs
+      .send(
+        "service_gwf0wx2",
+        "template_zk3s58m",
+        {
+          from_name: formData.name,
+          reply_to: formData.email,
+          message: formData.message,
+        },
+        "l3jEh3ISDsGlWTP12"
+      )
+      .then(
+        (response) => {
+          console.log(
+            "E-mail enviado com sucesso!",
+            response.status,
+            response.text
+          );
+          alert(
+            `Obrigado, ${formData.name}! Sua mensagem foi enviada com sucesso.`
+          );
+          setFormData({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          console.error("Erro ao enviar e-mail:", error);
+          alert(
+            "Ocorreu um erro ao enviar sua mensagem. Tente novamente mais tarde."
+          );
+        }
       );
-      console.log(response.data.message);
-
-      alert(`Thanks ${formData.name}, I will shortly connect with you!`);
-    } catch (error) {
-      console.error("Error submitting the form:", error);
-
-      alert("Backend Server was not Running while submitting the form.");
-    }
-
-    setFormData({});
   };
 
   return (
@@ -52,11 +70,12 @@ export default function Contactus() {
                 <h1 className="aboutme-heading">Entre em contato comigo</h1>
               </Zoom>
             </Col>
+
             <Col md={12} id="contact" className="mt-3">
               <Row>
                 <Col md={4}>
                   <div className="contacts-form" data-aos="fade-up">
-                    <form>
+                    <form onSubmit={handleSubmit}>
                       <div className="input-container d-flex flex-column">
                         <label htmlFor="username" className="label-class">
                           Nome completo
@@ -66,12 +85,12 @@ export default function Contactus() {
                           className="form-input input-class"
                           id="username"
                           name="name"
-                          aria-describedby="emailHelp"
                           placeholder="Digite seu nome"
-                          value={formData.name || ""}
+                          value={formData.name}
                           onChange={handleChange}
                         />
                       </div>
+
                       <div className="input-container d-flex flex-column">
                         <label htmlFor="email" className="label-class">
                           Email
@@ -79,14 +98,14 @@ export default function Contactus() {
                         <input
                           type="email"
                           className="form-input input-class"
-                          name="email"
                           id="email"
-                          aria-describedby="emailHelp"
+                          name="email"
                           placeholder="Digite seu email"
-                          value={formData.email || ""}
+                          value={formData.email}
                           onChange={handleChange}
                         />
                       </div>
+
                       <div className="input-container d-flex flex-column">
                         <label htmlFor="userMessage" className="label-class">
                           Mensagem
@@ -97,17 +116,13 @@ export default function Contactus() {
                           name="message"
                           rows="3"
                           placeholder="Digite a mensagem"
-                          value={formData.message || ""}
+                          value={formData.message}
                           onChange={handleChange}
                         />
                       </div>
 
                       <div className="submit-btn">
-                        <button
-                          type="submit"
-                          className="submitBtn"
-                          onClick={handleSubmit}
-                        >
+                        <button type="submit" className="submitBtn">
                           Enviar
                           <AiOutlineSend className="send-icon" />
                         </button>
@@ -115,10 +130,11 @@ export default function Contactus() {
                     </form>
                   </div>
                 </Col>
+
                 <Col md={7}>
                   <div className="contacts-details">
                     <a
-                      href={`mailto:hugobertoncelo@gmail.com`}
+                      href="mailto:hugobertoncelo@gmail.com"
                       className="personal-details"
                     >
                       <div className="detailsIcon">
@@ -128,15 +144,14 @@ export default function Contactus() {
                         hugobertoncelo@gmail.com
                       </p>
                     </a>
-                    <a
-                      href={`tel:+5528999453033`}
-                      className="personal-details"
-                    >
+
+                    <a href="tel:+5528999453033" className="personal-details">
                       <div className="detailsIcon">
                         <FiPhone />
                       </div>
                       <p style={{ color: "#fbd9ad" }}>(28) 99945-3033</p>
                     </a>
+
                     <a
                       href="https://maps.app.goo.gl/iPawqj6yXnrgHu2o9"
                       className="personal-details"
@@ -151,6 +166,7 @@ export default function Contactus() {
                       </div>
                     </a>
                   </div>
+
                   <div className="contact-map">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4434.7047954775635!2d-40.29713807000397!3d-20.275231000198207!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb81804ad481d6f%3A0x71875203a67637ac!2sParque%20Pedra%20da%20Cebola!5e1!3m2!1spt-BR!2sbr!4v1756829037606!5m2!1spt-BR!2sbr"

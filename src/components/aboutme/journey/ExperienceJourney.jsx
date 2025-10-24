@@ -45,11 +45,26 @@ function ExperienceJourney() {
           <h6 className="vertical-timeline-element-subtitle mt-2">
             Suporte Técnico Júnior
           </h6>
-          <p>• Atendimento a usuários remotos, solucionando problemas técnicos de hardware, software e rede.</p>
-          <p>• Instalação, configuração e manutenção de sistemas operacionais e aplicativos.</p>
-          <p>• Apoio na administração de contas de e-mail, acessos e permissões em sistemas internos.</p>
-          <p>• Registro e acompanhamento de chamados técnicos, garantindo agilidade na resolução.</p>
-          <p>• Suporte na manutenção preventiva e corretiva de equipamentos de informática.</p>
+          <p>
+            • Atendimento a usuários remotos, solucionando problemas técnicos de
+            hardware, software e rede.
+          </p>
+          <p>
+            • Instalação, configuração e manutenção de sistemas operacionais e
+            aplicativos.
+          </p>
+          <p>
+            • Apoio na administração de contas de e-mail, acessos e permissões
+            em sistemas internos.
+          </p>
+          <p>
+            • Registro e acompanhamento de chamados técnicos, garantindo
+            agilidade na resolução.
+          </p>
+          <p>
+            • Suporte na manutenção preventiva e corretiva de equipamentos de
+            informática.
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           iconStyle={{ background: "#fbd9ad", color: "rgb(78 22 112)" }}

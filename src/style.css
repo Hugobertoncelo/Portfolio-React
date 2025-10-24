@@ -18,9 +18,6 @@ html {
   color: #b061df !important;
 }
 
-/* --------- */
-/*  Preloader */
-/* --------- */
 #preloader {
   position: fixed;
   top: 0;
@@ -43,34 +40,24 @@ html {
   height: 100vh;
 }
 
-/* --------- */
-/*Scrollbar   */
-/* --------- */
-
 ::-webkit-scrollbar {
   width: 7px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #2d1950;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgba(178, 121, 216, 0.959);
   border-radius: 12px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(222, 130, 235, 0.911);
   border-radius: 12px;
 }
 
-/* --------- */
-/* Navbar Section  */
-/* --------- */
 .sticky {
   background-color: #212038d8 !important;
   transition: all 0.3s ease-out 0s !important;
@@ -95,6 +82,7 @@ html {
 .navbarmain {
   margin-left: 210px;
 }
+
 .navbar-toggler span {
   display: block !important;
   background-color: #be50f4 !important;
@@ -139,11 +127,13 @@ html {
   transform: rotate(-135deg) !important;
   opacity: 0.9 !important;
 }
+
 @media (max-width: 1400px) {
   .navbarmain {
     margin-left: 200px;
   }
 }
+
 @media (max-width: 1050px) {
   .navbarmain {
     margin-left: 50px;
@@ -171,12 +161,15 @@ html {
     margin-left: 0px;
   }
 }
+
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
+
 .img-fluid {
   width: 384px;
 }
+
 .logo {
   height: 1.8em !important;
   width: 1.8em !important;
@@ -231,14 +224,11 @@ html {
   width: 100%;
 }
 
-/* --------- */
-/* Home section */
-/* --------- */
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  animation-name: wave-animation;
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
   display: inline-block;
 }
 
@@ -248,7 +238,7 @@ html {
   }
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
   20% {
     transform: rotate(-8deg);
   }
@@ -263,11 +253,12 @@ html {
   }
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  }
   100% {
     transform: rotate(0deg);
   }
 }
+
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -309,7 +300,6 @@ html {
 }
 
 .main-name {
-  /* color: #cb70ff; */
   color: #cb70ff;
 }
 
@@ -318,20 +308,24 @@ html {
   color: #cb70ff !important;
   font-weight: 600 !important;
 }
+
 .Typewriter__cursor {
   font-size: 2.4em !important;
   color: #cb70ff !important;
 }
+
 .typing-homeclass {
   padding-left: 45px;
   text-align: left;
   font-size: 1.8em;
 }
+
 .sociallink-home {
   padding-left: 40px;
   text-align: left;
   padding-top: 35px;
 }
+
 @media (max-width: 767px) {
   .Typewriter__wrapper {
     font-size: 1.2em !important;
@@ -384,6 +378,7 @@ html {
   padding-top: 70px !important;
   color: #fbd9ad;
 }
+
 .certificate-section {
   position: relative;
   padding-bottom: 70px !important;
@@ -397,6 +392,7 @@ html {
   padding-bottom: 20px !important;
   text-align: center;
 }
+
 .certificate-description {
   color: white !important;
   padding-top: 0px !important;
@@ -472,9 +468,6 @@ html {
   color: #700c86 !important;
 }
 
-/* --------- */
-/* Footer */
-/* --------- */
 .footer {
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
@@ -482,6 +475,7 @@ html {
   padding-bottom: 8px !important ;
   z-index: 6;
 }
+
 .footer-copywright {
   text-align: center !important;
   z-index: 7;
@@ -491,10 +485,12 @@ html {
   text-align: center !important;
   z-index: 7;
 }
+
 .aboutme-heading {
   font-size: 4.6em;
   color: #fbd9ad;
 }
+
 @media (max-width: 767px) {
   .footer-copywright {
     text-align: center !important;
@@ -517,6 +513,7 @@ html {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
+
 .footer-icons {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
@@ -527,9 +524,7 @@ html {
 .blockquote-footer {
   color: #a588c0 !important;
 }
-/* --------- */
-/* Projects */
-/* --------- */
+
 .project-section {
   position: relative !important;
   padding-top: 150px !important;
@@ -553,6 +548,7 @@ html {
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
+
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
@@ -613,20 +609,18 @@ html {
   background-color: #6d20c5d7 !important;
   border-color: #6d20c5d7 !important;
 }
+
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+
 .project-heading {
   color: white !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
 }
-
-/* --------- */
-/* About */
-/* --------- */
 
 .about-section {
   position: relative !important;
@@ -663,6 +657,7 @@ html {
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
+
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
@@ -685,9 +680,6 @@ html {
     padding-top: 0 !important;
   }
 }
-/* --------- */
-/* Resume */
-/* --------- */
 
 .resume-section {
   position: relative !important;
@@ -716,12 +708,12 @@ html {
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
-
   .resume-right {
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
 }
+
 .resume .resume-title {
   font-size: 2em;
   font-weight: 700;
@@ -798,6 +790,7 @@ html {
   animation-fill-mode: forwards;
   animation-duration: 0.85s;
 }
+
 @keyframes likeAnimation {
   0% {
     transform: scale(1.5);
@@ -825,6 +818,7 @@ html {
   background-color: #a24dd386 !important;
   border-color: #a24dd386 !important;
 }
+
 .fork-btn-inner::after {
   display: none !important;
 }
@@ -873,6 +867,7 @@ html {
   border-radius: 0.25rem;
   width: 100%;
 }
+
 #com {
   display: flex;
   flex-direction: column;
@@ -885,6 +880,7 @@ html {
   transition: width 0.6s ease;
   width: 55%;
 }
+
 #pm {
   display: flex;
   flex-direction: column;
@@ -897,6 +893,7 @@ html {
   transition: width 0.6s ease;
   width: 55%;
 }
+
 #ps {
   display: flex;
   flex-direction: column;
@@ -909,6 +906,7 @@ html {
   transition: width 0.6s ease;
   width: 55%;
 }
+
 #aa {
   display: flex;
   flex-direction: column;
@@ -921,6 +919,7 @@ html {
   transition: width 0.6s ease;
   width: 55%;
 }
+
 #org {
   display: flex;
   flex-direction: column;
@@ -933,6 +932,7 @@ html {
   transition: width 0.6s ease;
   width: 55%;
 }
+
 #cr {
   display: flex;
   flex-direction: column;
@@ -945,6 +945,7 @@ html {
   transition: width 0.6s ease;
   width: 55%;
 }
+
 #react {
   display: flex;
   flex-direction: column;
@@ -982,7 +983,6 @@ html {
 }
 
 .homeaboutsocial {
-  /* text-align: center !important; */
   padding-top: 25px;
   color: white !important;
 }
@@ -1056,6 +1056,7 @@ html {
   flex: 0 0 30%;
   transition: all 0.4s ease 0s !important;
 }
+
 .cert-card:hover {
   transform: scale(1.05) !important;
   transition: all 0.9s ease 0s !important;
@@ -1174,6 +1175,7 @@ html {
   align-items: center;
   justify-content: center;
 }
+
 .blog--viewAll a {
   text-decoration: none;
   color: #fbd9ad;
@@ -1196,6 +1198,7 @@ html {
   cursor: pointer;
   color: #fbd9ad !important;
 }
+
 .blog--viewAll a button:hover {
   color: #fbd9ad !important;
 }
@@ -1209,6 +1212,7 @@ html {
   border-radius: 50%;
   cursor: pointer;
 }
+
 .viewArr:hover {
   color: #fbd9ad;
 }
@@ -1346,6 +1350,7 @@ html {
   color: #fbd9ad;
   transition: all 0.2s;
 }
+
 .iconBtn:hover {
   background-color: #fbd9ad;
   color: rgb(93 43 123);
@@ -1377,6 +1382,7 @@ html {
   width: 100%;
   resize: none;
 }
+
 .form-input::placeholder {
   color: #fbd9ad;
 }
@@ -1421,6 +1427,7 @@ html {
   width: 100%;
   resize: none;
 }
+
 .form-message::placeholder {
   color: #fbd9ad;
 }
@@ -1492,6 +1499,7 @@ html {
   transition: 250ms ease-in-out;
   flex-shrink: 0;
 }
+
 .detailsIcon:hover {
   transform: scale(1.1);
   color: #fbd9ad;
@@ -1512,6 +1520,7 @@ html {
 .contact-map {
   padding-left: 7rem;
 }
+
 @media (max-width: 767px) {
   .contacts-details {
     padding-left: 0.5rem;
@@ -1670,6 +1679,7 @@ html {
   color: #fbd9ad;
   transition: all 0.2s;
 }
+
 .iconBtn:hover {
   background-color: #fbd9ad;
   color: rgb(93 43 123);
@@ -1719,6 +1729,7 @@ html {
     transform: translateX(-128px) scale(1.1) !important;
   }
 }
+
 #resume {
   height: 800px;
 }
