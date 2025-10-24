@@ -23,6 +23,7 @@ import TechnicalJourney from "./components/aboutme/journey/TechnicalJourney";
 import ProjectJourney from "./components/aboutme/journey/ProjectJourney";
 import SocialMedia from "./components/aboutme/social_media/SocialMedia";
 import Toolkit from "./components/aboutme/skills/Toolkit";
+import Contact from "./components/contactus/Contactus";
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -61,6 +62,7 @@ function App() {
           <Route path="/projectspage" element={<ProjectPage />} />
           <Route path="/certificatepage" element={<CertificatePage />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
         <Footer />

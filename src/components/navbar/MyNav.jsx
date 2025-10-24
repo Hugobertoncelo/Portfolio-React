@@ -7,9 +7,11 @@ import {
   AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
+  AiOutlineMail,
 } from "react-icons/ai";
 import "../../style.css";
 import { CgFileDocument } from "react-icons/cg";
+
 export default function MyNav() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -97,6 +99,17 @@ export default function MyNav() {
                 <ImBlog style={{ marginBottom: "2px" }} /> Certificados
               </Nav.Link>
             </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/contact"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineMail style={{ marginBottom: "2px" }} /> Contatos
+              </Nav.Link>
+            </Nav.Item>
+
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/Hugobertoncelo/Portfolio-React"

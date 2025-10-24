@@ -67,7 +67,21 @@ export default function Contactus() {
               className="certificate-description d-flex justify-content-center"
             >
               <Zoom left cascade>
-                <h1 className="aboutme-heading">Entre em contato comigo</h1>
+                <h1
+                  style={{
+                    backgroundColor: "#fbd9ad",
+                    borderRadius: "15px",
+                    padding: "5px 25px",
+                    color: "rgb(134 61 176)",
+                    marginTop: "170px",
+                    fontSize: "2rem",
+                    textAlign: "center",
+                    height: "54px",
+                    width: "100%",
+                  }}
+                >
+                  ENTRE EM CONTATO
+                </h1>
               </Zoom>
             </Col>
 
