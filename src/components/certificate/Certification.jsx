@@ -2,9 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
-import senai from "../../images/certificates/senai.jpg";
+import logosenai from "../../images/certificates/logosenai.jpg";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
+import certificadoSenai from "../../images/certificates/senai.png";
 
 export default function Certification() {
   return (
@@ -22,12 +23,12 @@ export default function Certification() {
             </Col>
             <Col ms={12} className="mt-3">
               <Row className="g-5">
-                <Col md={4}>
+                <Col md={14}>
                   <Fade bottom duration={2000} distance="20px">
                     <div className="cert-card">
                       <div className="content">
                         <a
-                          href="https://github.com/Hugobertoncelo/Certificados/blob/main/certificado.senai.pdf"
+                          href={certificadoSenai}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -36,7 +37,13 @@ export default function Certification() {
                             className="cert-header"
                             style={{ backgroundColor: "white" }}
                           >
-                            {<img className="logo_img" src={senai} alt={senai} />}
+                            {
+                              <img
+                                className="logo_img"
+                                src={logosenai}
+                                alt={logosenai}
+                              />
+                            }
                           </div>
                           <div className="content-details fadeIn-top">
                             <h3
@@ -53,13 +60,121 @@ export default function Certification() {
                           className="cert-body-title"
                           style={{ fontWeight: 700, color: "#fbd9ad" }}
                         >
-                          Problem Solving Basic : Programming Fundamentals
+                          Programador Web
                         </h2>
                         <h3
                           className="cert-body-subtitle"
                           style={{ color: "#eb90ff", marginBottom: "0px" }}
                         >
-                          - HackerRank
+                          Senai
+                        </h3>
+                      </div>
+                    </div>
+                  </Fade>
+                </Col>
+              </Row>
+            </Col>
+
+            <Col ms={12} className="mt-3">
+              <Row className="g-5">
+                <Col md={14}>
+                  <Fade bottom duration={2000} distance="20px">
+                    <div className="cert-card">
+                      <div className="content">
+                        <a
+                          href={certificadoSenai}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <div className="content-overlay"></div>
+                          <div
+                            className="cert-header"
+                            style={{ backgroundColor: "white" }}
+                          >
+                            {
+                              <img
+                                className="logo_img"
+                                src={logosenai}
+                                alt={logosenai}
+                              />
+                            }
+                          </div>
+                          <div className="content-details fadeIn-top">
+                            <h3
+                              className="content-title"
+                              style={{ color: "black" }}
+                            >
+                              Certificado
+                            </h3>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="cert-body">
+                        <h2
+                          className="cert-body-title"
+                          style={{ fontWeight: 700, color: "#fbd9ad" }}
+                        >
+                          Programador Web
+                        </h2>
+                        <h3
+                          className="cert-body-subtitle"
+                          style={{ color: "#eb90ff", marginBottom: "0px" }}
+                        >
+                          Senai
+                        </h3>
+                      </div>
+                    </div>
+                  </Fade>
+                </Col>
+              </Row>
+            </Col>
+
+            <Col ms={12} className="mt-3">
+              <Row className="g-5">
+                <Col md={14}>
+                  <Fade bottom duration={2000} distance="20px">
+                    <div className="cert-card">
+                      <div className="content">
+                        <a
+                          href={certificadoSenai}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <div className="content-overlay"></div>
+                          <div
+                            className="cert-header"
+                            style={{ backgroundColor: "white" }}
+                          >
+                            {
+                              <img
+                                className="logo_img"
+                                src={logosenai}
+                                alt={logosenai}
+                              />
+                            }
+                          </div>
+                          <div className="content-details fadeIn-top">
+                            <h3
+                              className="content-title"
+                              style={{ color: "black" }}
+                            >
+                              Certificado
+                            </h3>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="cert-body">
+                        <h2
+                          className="cert-body-title"
+                          style={{ fontWeight: 700, color: "#fbd9ad" }}
+                        >
+                          Programador Web
+                        </h2>
+                        <h3
+                          className="cert-body-subtitle"
+                          style={{ color: "#eb90ff", marginBottom: "0px" }}
+                        >
+                          Senai
                         </h3>
                       </div>
                     </div>

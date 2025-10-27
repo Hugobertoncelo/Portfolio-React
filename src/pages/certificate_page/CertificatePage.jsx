@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
-import senai from "../../images/certificates/senai.jpg";
+import logosenai from "../../images/certificates/logosenai.jpg";
 import Particle from "../../Particle";
 import CategoryBar from "../../components/CategoryBar";
 import ScrollToTopButton from "../../components/Button/ScrollToTopButton";
+import senai from "../../images/certificates/senai.png";
 
 export default function CertificatePage() {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
@@ -17,17 +18,17 @@ export default function CertificatePage() {
   const certificates = [
     {
       id: 1,
-      title: "Fundamentos de Programação",
+      title: "Programador Web",
       org: "Senai",
-      img: senai,
+      img: logosenai,
       category: "Senai",
-      link: "https://github.com/Hugobertoncelo/Certificados/blob/main/certificado.senai.pdf",
+      link: senai,
     },
     {
       id: 2,
       title: "Front-End Web Development",
       org: "Senai",
-      img: senai,
+      img: logosenai,
       category: "Senai",
       link: "https://github.com/Hugobertoncelo/Certificados/blob/main/certificado.senai2.pdf",
     },
@@ -35,17 +36,9 @@ export default function CertificatePage() {
       id: 3,
       title: "JavaScript Essentials",
       org: "Coursera",
-      img: senai,
+      img: logosenai,
       category: "Coursera",
       link: "https://github.com/Hugobertoncelo/Certificados/blob/main/certificado.coursera.pdf",
-    },
-    {
-      id: 4,
-      title: "React Avançado",
-      org: "Udemy",
-      img: senai,
-      category: "Udemy",
-      link: "https://github.com/Hugobertoncelo/Certificados/blob/main/certificado.udemy.pdf",
     },
   ];
 
