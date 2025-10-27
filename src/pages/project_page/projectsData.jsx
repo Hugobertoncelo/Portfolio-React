@@ -1,6 +1,8 @@
 import delivery from "../../images/projects/delivery.png";
 import stopwatch from "../../images/projects/cronometro.png";
 import drawer from "../../images/projects/sorteio.png";
+import converter from "../../images/projects/conversor-moeda.png";
+import gamemario from "../../images/projects/mario-game.png";
 
 export const projects = [
   {
@@ -29,5 +31,23 @@ export const projects = [
     desc: "Um aplicativo simples que gera números aleatórios com um design leve e intuitivo.",
     repoLink: "https://github.com/Hugobertoncelo/Dev-Sorteio",
     siteLink: "https://hugobertoncelo.github.io/Dev-Sorteio/",
+  },
+  {
+    id: 4,
+    title: "Conversor de moedas",
+    img: converter,
+    lang: "JavaScript",
+    desc: "Aplicação desenvolvida para facilitar a conversão entre diferentes moedas em tempo real, com interface intuitiva e responsiva.",
+    repoLink: "https://github.com/Hugobertoncelo/Conversor-de-moedas",
+    siteLink: "https://hugobertoncelo.github.io/Conversor-de-moedas/",
+  },
+  {
+    id: 5,
+    title: "Mario Game",
+    img: gamemario,
+    lang: "Jogos",
+    desc: "Jogo simples do Mario onde é possível pular obstáculos. O jogo termina quando você colide com algum obstáculo.",
+    repoLink: "https://github.com/Hugobertoncelo/Mario-Game",
+    siteLink: "https://hugobertoncelo.github.io/Mario-Game/",
   },
 ];
