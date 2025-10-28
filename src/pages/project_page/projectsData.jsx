@@ -3,6 +3,7 @@ import stopwatch from "../../images/projects/cronometro.png";
 import drawer from "../../images/projects/sorteio.png";
 import converter from "../../images/projects/conversor-moeda.png";
 import gamemario from "../../images/projects/mario-game.png";
+import wecare from "../../images/projects/we-care.png";
 
 export const projects = [
   {
@@ -49,5 +50,14 @@ export const projects = [
     desc: "Jogo simples do Mario onde é possível pular obstáculos. O jogo termina quando você colide com algum obstáculo.",
     repoLink: "https://github.com/Hugobertoncelo/Mario-Game",
     siteLink: "https://hugobertoncelo.github.io/Mario-Game/",
+  },
+  {
+    id: 6,
+    title: "We care",
+    img: wecare,
+    lang: "HTML e CSS",
+    desc: "Projeto simples realizado em html e css",
+    repoLink: "https://github.com/Hugobertoncelo/we-care",
+    siteLink: "https://hugobertoncelo.github.io/we-care/",
   },
 ];
