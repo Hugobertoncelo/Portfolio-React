@@ -8,6 +8,11 @@ import cb from "../../../images/links/cb.png";
 import pg from "../../../images/links/pg.png";
 import pm from "../../../images/links/pm.png";
 import chrome from "../../../images/links/chorme.svg";
+import mongodb from "../../../images/links/mongodb.png";
+import docker from "../../../images/links/docker.png";
+import figma from "../../../images/links/figma.png";
+import vite from "../../../images/links/vite.png";
+import npm from "../../../images/links/npm.png";
 import { Link } from "react-router-dom";
 import Zoom from "react-reveal/Zoom";
 
@@ -61,6 +66,21 @@ export default function Toolkit() {
           </Col>
           <Col xs={4} md={2} className="tech-icons">
             <img src={chrome} alt="" style={{ width: "95%", height: "95%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={mongodb} alt="" style={{ width: "95%", height: "95%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={docker} alt="" style={{ width: "95%", height: "95%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={figma} alt="" style={{ width: "95%", height: "95%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={vite} alt="" style={{ width: "95%", height: "95%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={npm} alt="" style={{ width: "95%", height: "95%" }} />
           </Col>
         </Row>
       </Container>

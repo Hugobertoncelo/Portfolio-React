@@ -6,6 +6,7 @@ import logosenai from "../../images/certificates/logosenai.jpg";
 import Particle from "../../Particle";
 import CategoryBar from "../../components/CategoryBar";
 import ScrollToTopButton from "../../components/Button/ScrollToTopButton";
+import ShowMoreButtons from "../../components/Button/ShowMoreButtons";
 import senai from "../../images/certificates/senai.png";
 
 export default function CertificatePage() {
@@ -35,14 +36,25 @@ export default function CertificatePage() {
     {
       id: 3,
       title: "JavaScript Essentials",
-      org: "Coursera",
+      org: "Alura",
       img: logosenai,
-      category: "Coursera",
+      category: "Alura",
       link: "https://github.com/Hugobertoncelo/Certificados/blob/main/certificado.coursera.pdf",
     },
   ];
 
-  const categories = ["Todos", "HackerRank", "Senai", "Coursera", "Udemy"];
+  const categories = [
+    "Todos",
+    "Faesa",
+    "DevClub",
+    "Rocketseat",
+    "Senai",
+    "Ifes",
+    "Alura",
+    "Udemy",
+    "Full Stack Club",
+    "Hashtag Treinamentos",
+  ];
 
   const filteredCertificates =
     selectedCategory === "Todos"
@@ -72,55 +84,59 @@ export default function CertificatePage() {
           <Container fluid className="certificate-section" id="about">
             <Container>
               <Row>
-                {filteredCertificates.map((cert) => (
-                  <Col key={cert.id} md={4} sm={12} className="mt-5">
-                    <Fade bottom duration={2000} distance="20px">
-                      <div className="cert-card">
-                        <div className="content">
-                          <a
-                            href={cert.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <div className="content-overlay"></div>
-                            <div
-                              className="cert-header"
-                              style={{ backgroundColor: "white" }}
+                <ShowMoreButtons
+                  items={filteredCertificates}
+                  itemsPerPage={3}
+                  renderItem={(cert) => (
+                    <Col key={cert.id} md={14} sm={12} className="mt-5">
+                      <Fade bottom duration={2000} distance="20px">
+                        <div className="cert-card">
+                          <div className="content">
+                            <a
+                              href={cert.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
                             >
-                              <img
-                                className="logo_img"
-                                src={cert.img}
-                                alt={cert.title}
-                              />
-                            </div>
-                            <div className="content-details fadeIn-top">
-                              <h3
-                                className="content-title"
-                                style={{ color: "black" }}
+                              <div className="content-overlay"></div>
+                              <div
+                                className="cert-header"
+                                style={{ backgroundColor: "white" }}
                               >
-                                Certificado
-                              </h3>
-                            </div>
-                          </a>
+                                <img
+                                  className="logo_img"
+                                  src={cert.img}
+                                  alt={cert.title}
+                                />
+                              </div>
+                              <div className="content-details fadeIn-top">
+                                <h3
+                                  className="content-title"
+                                  style={{ color: "black" }}
+                                >
+                                  Certificado
+                                </h3>
+                              </div>
+                            </a>
+                          </div>
+                          <div className="cert-body">
+                            <h2
+                              className="cert-body-title"
+                              style={{ fontWeight: 700, color: "#fbd9ad" }}
+                            >
+                              {cert.title}
+                            </h2>
+                            <h3
+                              className="cert-body-subtitle"
+                              style={{ color: "#eb90ff", marginBottom: "0px" }}
+                            >
+                              - {cert.org}
+                            </h3>
+                          </div>
                         </div>
-                        <div className="cert-body">
-                          <h2
-                            className="cert-body-title"
-                            style={{ fontWeight: 700, color: "#fbd9ad" }}
-                          >
-                            {cert.title}
-                          </h2>
-                          <h3
-                            className="cert-body-subtitle"
-                            style={{ color: "#eb90ff", marginBottom: "0px" }}
-                          >
-                            - {cert.org}
-                          </h3>
-                        </div>
-                      </div>
-                    </Fade>
-                  </Col>
-                ))}
+                      </Fade>
+                    </Col>
+                  )}
+                />
               </Row>
             </Container>
           </Container>

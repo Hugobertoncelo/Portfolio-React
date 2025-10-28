@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
 import logosenai from "../../images/certificates/logosenai.jpg";
+import logodevclub from "../../images/certificates/logodevclub.jpg";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
 import certificadoSenai from "../../images/certificates/senai.png";
@@ -94,8 +95,8 @@ export default function Certification() {
                             {
                               <img
                                 className="logo_img"
-                                src={logosenai}
-                                alt={logosenai}
+                                src={logodevclub}
+                                alt={logodevclub}
                               />
                             }
                           </div>
