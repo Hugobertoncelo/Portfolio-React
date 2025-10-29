@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
 import logosenai from "../../images/certificates/logosenai.jpg";
-import logodevclub from "../../images/certificates/logodevclub.jpg";
+import logofaesa from "../../images/certificates/logofaesa.jpg";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
 import certificadoSenai from "../../images/certificates/senai.png";
@@ -95,8 +95,8 @@ export default function Certification() {
                             {
                               <img
                                 className="logo_img"
-                                src={logodevclub}
-                                alt={logodevclub}
+                                src={logofaesa}
+                                alt={logofaesa}
                               />
                             }
                           </div>
@@ -115,7 +115,7 @@ export default function Certification() {
                           className="cert-body-title"
                           style={{ fontWeight: 700, color: "#fbd9ad" }}
                         >
-                          Programador Web
+                          Análise e Desenvolvimento de Sistemas
                         </h2>
                         <h3
                           className="cert-body-subtitle"
