@@ -21,7 +21,7 @@ export default function ProjectPage() {
     "Todos",
     "JavaScript",
     "React",
-    "Typescript",
+    "TypeScript",
     "Jogos",
     "Python",
     "Angular",

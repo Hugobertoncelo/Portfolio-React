@@ -17,8 +17,13 @@ export default function ShowMoreButtons({
     setVisibleCount(itemsPerPage);
   };
 
+  const handleShowAll = () => {
+    setVisibleCount(items.length);
+  };
+
   const canShowMore = visibleCount < items.length;
   const canShowLess = visibleCount > itemsPerPage;
+  const canShowAll = visibleCount < items.length;
 
   return (
     <Container style={{ position: "relative", zIndex: 1 }}>
@@ -74,6 +79,24 @@ export default function ShowMoreButtons({
           }}
         >
           Mostrar Menos
+        </Button>
+
+        <Button
+          variant="secondary"
+          onClick={handleShowAll}
+          disabled={!canShowAll}
+          style={{
+            backgroundColor: canShowAll ? "#cba2f3" : "#e1cbee",
+            color: "#4b1b72",
+            border: "none",
+            padding: "10px 20px",
+            borderRadius: "20px",
+            fontWeight: "500",
+            boxShadow: "0 0 8px rgba(134, 61, 176, 0.3)",
+            cursor: canShowAll ? "pointer" : "not-allowed",
+          }}
+        >
+          Mostrar Todos
         </Button>
       </div>
     </Container>
