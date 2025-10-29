@@ -6,7 +6,7 @@ import logosenai from "../../images/certificates/logosenai.jpg";
 import logofaesa from "../../images/certificates/logofaesa.jpg";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
-import certificadoSenai from "../../images/certificates/senai.png";
+import certificadoSenai from "../../images/certificates/certificates/Senai/senai1.pdf";
 
 export default function Certification() {
   return (

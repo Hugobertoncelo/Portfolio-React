@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
-import logosenai from "../../images/certificates/logosenai.jpg";
+
 import Particle from "../../Particle";
 import CategoryBar from "../../components/CategoryBar";
 import ScrollToTopButton from "../../components/Button/ScrollToTopButton";
 import ShowMoreButtons from "../../components/Button/ShowMoreButtons";
-import senai from "../../images/certificates/senai.png";
+
+import { certificates } from "./Certificates";
 
 export default function CertificatePage() {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
@@ -15,33 +16,6 @@ export default function CertificatePage() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
-
-  const certificates = [
-    {
-      id: 1,
-      title: "Programador Web",
-      org: "Senai",
-      img: logosenai,
-      category: "Senai",
-      link: senai,
-    },
-    {
-      id: 2,
-      title: "Front-End Web Development",
-      org: "Senai",
-      img: logosenai,
-      category: "Senai",
-      link: "https://github.com/Hugobertoncelo/Certificados/blob/main/certificado.senai2.pdf",
-    },
-    {
-      id: 3,
-      title: "JavaScript Essentials",
-      org: "Alura",
-      img: logosenai,
-      category: "Alura",
-      link: "https://github.com/Hugobertoncelo/Certificados/blob/main/certificado.coursera.pdf",
-    },
-  ];
 
   const categories = [
     "Todos",
