@@ -1,47 +1,81 @@
 import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
 import { FaArrowUp } from "react-icons/fa";
 
 export default function ScrollToTopButton() {
   const [showButton, setShowButton] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
+      const scrollY = window.scrollY || window.pageYOffset;
+      setShowButton(scrollY > 300);
     };
-    window.addEventListener("scroll", handleScroll);
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  const doScrollTop = (smooth = true) => {
+    try {
+      if (smooth) {
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        setTimeout(() => {
+          document.documentElement.scrollTop = 0;
+          document.body.scrollTop = 0;
+        }, 600);
+      } else {
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      }
+    } catch (e) {
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    }
   };
 
-  if (!showButton) return null;
+  const handlePointer = (e) => {
+    e.preventDefault && e.preventDefault();
+    e.stopPropagation && e.stopPropagation();
+    doScrollTop(true);
+  };
 
-  return (
+  if (!showButton || !mounted) return null;
+
+  const button = (
     <button
-      onClick={scrollToTop}
+      onPointerDown={handlePointer}
+      onMouseDown={handlePointer}
+      onTouchStart={handlePointer}
+      aria-label="Voltar ao topo"
       style={{
         position: "fixed",
-        bottom: "30px",
-        right: "30px",
+        bottom: "12px",
+        right: "16px",
         backgroundColor: "#8641B0",
-        color: "white",
         border: "none",
         borderRadius: "50%",
-        width: "50px",
-        height: "50px",
-        fontSize: "24px",
+        width: "52px",
+        height: "52px",
+        fontSize: "25px",
         cursor: "pointer",
-        boxShadow: "0 4px 6px rgba(0,0,0,0.3)",
-        zIndex: 1000,
+        boxShadow: "0 6px 14px rgba(0,0,0,0.35)",
+        zIndex: 2147483647,
+        pointerEvents: "auto",
+        transition: "transform 180ms ease, opacity 180ms ease",
+        transform: "translateZ(0) translateY(0)",
+        WebkitTapHighlightColor: "transparent",
+        touchAction: "manipulation",
       }}
     >
       <FaArrowUp />
     </button>
   );
+
+  return ReactDOM.createPortal(button, document.body);
 }
