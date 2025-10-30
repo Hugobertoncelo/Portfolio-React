@@ -9,6 +9,7 @@ import { projects } from "./projectsData";
 import NoDeployProjects from "./NoDeployProjects";
 import ScrollToTopButton from "../../components/Button/ScrollToTopButton";
 import ShowMoreButtons from "../../components/Button/ShowMoreButtons";
+import RepoLinks from "./RepoLinks";
 
 export default function ProjectPage() {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
@@ -70,6 +71,7 @@ export default function ProjectPage() {
           </Container>
 
           <NoDeployProjects />
+          <RepoLinks />
         </Container>
       </Container>
 

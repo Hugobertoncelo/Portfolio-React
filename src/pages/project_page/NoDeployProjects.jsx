@@ -8,33 +8,27 @@ export default function NoDeployProjects() {
   const noDeployProjects = [
     {
       id: 1,
-      title: "Campo Minado",
-      repoLink: "https://github.com/Hugobertoncelo/Campo-Minato",
+      title: "DevBurguer",
+      frontEndLink: "https://github.com/Hugobertoncelo/devburguer",
+      backEndLink: "https://github.com/Hugobertoncelo/devburguer-api",
     },
     {
       id: 2,
-      title: "Pac-Man",
-      repoLink: "https://github.com/Hugobertoncelo/Pacman-React",
+      title: "PizzaShop",
+      frontEndLink: "https://github.com/Hugobertoncelo/pizzashop-web",
+      backEndLink: "https://github.com/Hugobertoncelo/pizzashop-api-main",
     },
     {
       id: 3,
-      title: "Relógio Digital",
-      repoLink: "https://github.com/Hugobertoncelo/Relogio-Digital",
+      title: "Web Agents",
+      frontEndLink: "https://github.com/Hugobertoncelo/Web-agents",
+      backEndLink: "https://github.com/Hugobertoncelo/Server-agents",
     },
     {
       id: 4,
-      title: "Sorteador de Números",
-      repoLink: "https://github.com/Hugobertoncelo/Sorteador",
-    },
-    {
-      id: 5,
-      title: "Jogo da Velha",
-      repoLink: "https://github.com/Hugobertoncelo/Jogo-da-Velha",
-    },
-    {
-      id: 6,
-      title: "Calculadora",
-      repoLink: "https://github.com/Hugobertoncelo/Calculadora",
+      title: "EasyCar",
+      frontEndLink: "https://github.com/Hugobertoncelo/Easycar",
+      backEndLink: "https://github.com/Hugobertoncelo/Servidor-easycar",
     },
   ];
 
@@ -48,7 +42,12 @@ export default function NoDeployProjects() {
         }}
       >
         <Zoom left cascade>
-          <h1 style={{ color: "rgb(134 61 176)", padding: "10px 0" }}>
+          <h1
+            style={{
+              color: "rgb(134 61 176)",
+              padding: "1px 0",
+            }}
+          >
             PROJETOS SEM DEPLOY
           </h1>
         </Zoom>
