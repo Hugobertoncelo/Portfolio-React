@@ -121,7 +121,7 @@ export default function Certification() {
                           className="cert-body-subtitle"
                           style={{ color: "#eb90ff", marginBottom: "0px" }}
                         >
-                          Senai
+                          Faesa
                         </h3>
                       </div>
                     </div>
