@@ -101,9 +101,13 @@ export default function CertificatePage() {
                             </h2>
                             <h3
                               className="cert-body-subtitle"
-                              style={{ color: "#eb90ff", marginBottom: "0px" }}
+                              style={{
+                                color: "#eb90ff",
+                                marginBottom: "0px",
+                                textDecoration: "underline",
+                              }}
                             >
-                              - {cert.org}
+                              {cert.org}
                             </h3>
                           </div>
                         </div>

@@ -1,10 +1,10 @@
-import logoSenai from "../../images/certificates/logosenai.jpg";
-import logoAlura from "../../images/certificates/logoalura.png";
-import logoDevclub from "../../images/certificates/logodevclub.jpg";
-import logoFaesa from "../../images/certificates/logofaesa.jpg";
-import logoFullStackClub from "../../images/certificates/logoFullStackClub.webp";
-import logoHashtag from "../../images/certificates/logohashtag.webp";
-import logoIfes from "../../images/certificates/logoifes.png";
+import logoSenai from "../../images/certificates/logoSenai.jpg";
+import logoAlura from "../../images/certificates/logoAlura.png";
+import logoDevclub from "../../images/certificates/logoDevclub.png";
+import logoFaesa from "../../images/certificates/logoFaesa.jpg";
+import logoFullStackClub from "../../images/certificates/logoFullStackClub.png";
+import logoHashtag from "../../images/certificates/logoHashtag.webp";
+import logoIfes from "../../images/certificates/logoIfes.png";
 import logoRocketseat from "../../images/certificates/logoRocketseat.png";
 import logoUdemy from "../../images/certificates/logoUdemy.png";
 import senai1 from "../../images/certificates/certificates/Senai/senai1.pdf";
@@ -30,6 +30,16 @@ import rocket2 from "../../images/certificates/certificates/Rocketseat/rocket2.p
 import rocket3 from "../../images/certificates/certificates/Rocketseat/rocket3.pdf";
 import rocket4 from "../../images/certificates/certificates/Rocketseat/rocket4.pdf";
 import udemy1 from "../../images/certificates/certificates/Udemy/udemy1.pdf";
+import faesa1 from "../../images/certificates/certificates/Faesa/faesa1.pdf";
+import faesa2 from "../../images/certificates/certificates/Faesa/faesa2.pdf";
+import faesa3 from "../../images/certificates/certificates/Faesa/faesa3.pdf";
+import faesa4 from "../../images/certificates/certificates/Faesa/faesa4.pdf";
+import faesa5 from "../../images/certificates/certificates/Faesa/faesa5.pdf";
+import faesa6 from "../../images/certificates/certificates/Faesa/faesa6.pdf";
+import faesa7 from "../../images/certificates/certificates/Faesa/faesa7.pdf";
+import faesa8 from "../../images/certificates/certificates/Faesa/faesa8.pdf";
+import faesa9 from "../../images/certificates/certificates/Faesa/faesa9.pdf";
+import faesa10 from "../../images/certificates/certificates/Faesa/faesa10.pdf";
 
 export const certificates = [
   {
@@ -215,5 +225,85 @@ export const certificates = [
     img: logoUdemy,
     category: "Udemy",
     link: udemy1,
+  },
+  {
+    id: 24,
+    title: "Fundamentos do Inglês",
+    org: "Faesa",
+    img: logoFaesa,
+    category: "Faesa",
+    link: faesa1,
+  },
+  {
+    id: 25,
+    title: "Gerenciamento de Projetos de Software",
+    org: "Faesa",
+    img: logoFaesa,
+    category: "Faesa",
+    link: faesa2,
+  },
+  {
+    id: 26,
+    title: "Comunicação e Escrita",
+    org: "Faesa",
+    img: logoFaesa,
+    category: "Faesa",
+    link: faesa3,
+  },
+  {
+    id: 27,
+    title: "Coaching e Carreira",
+    org: "Faesa",
+    img: logoFaesa,
+    category: "Faesa",
+    link: faesa4,
+  },
+  {
+    id: 28,
+    title: "Atitude Empreendedora",
+    org: "Faesa",
+    img: logoFaesa,
+    category: "Faesa",
+    link: faesa5,
+  },
+  {
+    id: 29,
+    title: "Fundamentos do Inglês",
+    org: "Faesa",
+    img: logoFaesa,
+    category: "Faesa",
+    link: faesa6,
+  },
+  {
+    id: 30,
+    title: "Gerenciamento de Projetos de Software",
+    org: "Faesa",
+    img: logoFaesa,
+    category: "Faesa",
+    link: faesa7,
+  },
+  {
+    id: 31,
+    title: "Comunicação e Escrita",
+    org: "Faesa",
+    img: logoFaesa,
+    category: "Faesa",
+    link: faesa8,
+  },
+  {
+    id: 32,
+    title: "Coaching e Carreira",
+    org: "Faesa",
+    img: logoFaesa,
+    category: "Faesa",
+    link: faesa9,
+  },
+  {
+    id: 33,
+    title: "Atitude Empreendedora",
+    org: "Faesa",
+    img: logoFaesa,
+    category: "Faesa",
+    link: faesa10,
   },
 ];

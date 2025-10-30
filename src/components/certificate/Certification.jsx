@@ -2,11 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
-import logosenai from "../../images/certificates/logosenai.jpg";
-import logofaesa from "../../images/certificates/logofaesa.jpg";
+import logoSenai from "../../images/certificates/logoSenai.jpg";
+import logoFaesa from "../../images/certificates/logoFaesa.jpg";
+import logoDevClub from "../../images/certificates/logoDevclub.png";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
 import certificadoSenai from "../../images/certificates/certificates/Senai/senai1.pdf";
+import certificadoDevClub from "../../images/certificates/certificates/DevClub/devclub1.pdf";
 
 export default function Certification() {
   return (
@@ -41,8 +43,8 @@ export default function Certification() {
                             {
                               <img
                                 className="logo_img"
-                                src={logosenai}
-                                alt={logosenai}
+                                src={logoSenai}
+                                alt={logoSenai}
                               />
                             }
                           </div>
@@ -65,7 +67,11 @@ export default function Certification() {
                         </h2>
                         <h3
                           className="cert-body-subtitle"
-                          style={{ color: "#eb90ff", marginBottom: "0px" }}
+                          style={{
+                            color: "#eb90ff",
+                            marginBottom: "0px",
+                            textDecoration: "underline",
+                          }}
                         >
                           Senai
                         </h3>
@@ -95,8 +101,8 @@ export default function Certification() {
                             {
                               <img
                                 className="logo_img"
-                                src={logofaesa}
-                                alt={logofaesa}
+                                src={logoFaesa}
+                                alt={logoFaesa}
                               />
                             }
                           </div>
@@ -119,7 +125,11 @@ export default function Certification() {
                         </h2>
                         <h3
                           className="cert-body-subtitle"
-                          style={{ color: "#eb90ff", marginBottom: "0px" }}
+                          style={{
+                            color: "#eb90ff",
+                            marginBottom: "0px",
+                            textDecoration: "underline",
+                          }}
                         >
                           Faesa
                         </h3>
@@ -137,7 +147,7 @@ export default function Certification() {
                     <div className="cert-card">
                       <div className="content">
                         <a
-                          href={certificadoSenai}
+                          href={certificadoDevClub}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -149,8 +159,8 @@ export default function Certification() {
                             {
                               <img
                                 className="logo_img"
-                                src={logosenai}
-                                alt={logosenai}
+                                src={logoDevClub}
+                                alt={logoDevClub}
                               />
                             }
                           </div>
@@ -169,13 +179,17 @@ export default function Certification() {
                           className="cert-body-title"
                           style={{ fontWeight: 700, color: "#fbd9ad" }}
                         >
-                          Programador Web
+                          Certificado MEC - Full Stack
                         </h2>
                         <h3
                           className="cert-body-subtitle"
-                          style={{ color: "#eb90ff", marginBottom: "0px" }}
+                          style={{
+                            color: "#eb90ff",
+                            marginBottom: "0px",
+                            textDecoration: "underline",
+                          }}
                         >
-                          Senai
+                          DevClub
                         </h3>
                       </div>
                     </div>
