@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
-import delivery from "../../images/projects/delivery.png";
-import stopwatch from "../../images/projects/cronometro.png";
-import drawer from "../../images/projects/sorteio.png";
+import workshop from "../../images/projects/oficina.png";
+import controleleite from "../../images/projects/controle-leite.png";
+import pacman from "../../images/projects/pacman.png";
 import { FaCode, FaGlobe } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
@@ -13,30 +13,30 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Delivery Ki Delícia",
-      img: delivery,
+      title: "Oficina Mecânica",
+      img: workshop,
       lang: "JavaScript",
-      desc: "Um aplicativo de delivery moderno e responsivo, que permite navegar por categorias, visualizar produtos e fazer pedidos de forma rápida e prática. Desenvolvido com foco em usabilidade, design limpo e experiência do usuário.",
-      repoLink: "https://github.com/Hugobertoncelo/Delivery",
-      siteLink: "https://hugobertoncelo.github.io/Delivery/",
+      desc: "Página web para oficina mecânica com serviços, contatos e formulário de agendamento.",
+      repoLink: "https://github.com/Hugobertoncelo/Oficina-Mecanica",
+      siteLink: "https://hugobertoncelo.github.io/Oficina-Mecanica/",
     },
     {
       id: 2,
-      title: "Relógio Digital",
-      img: stopwatch,
-      lang: "HTML e CSS",
-      desc: "Um relógio digital moderno e funcional, que exibe hora, minutos e segundos em tempo real. Desenvolvido com foco em precisão, design minimalista e interface intuitiva.",
-      repoLink: "https://github.com/Hugobertoncelo/Relogio-Digital",
-      siteLink: "https://hugobertoncelo.github.io/Relogio-Digital/",
+      title: "Controle de Consumo de Leite Infantil",
+      img: controleleite,
+      lang: "TypeScript",
+      desc: "Aplicação em React para controle do consumo diário de leite infantil.",
+      repoLink: "https://github.com/Hugobertoncelo/Control-Milk",
+      siteLink: "https://control-milk.vercel.app/",
     },
     {
       id: 3,
-      title: "Sorteador",
-      img: drawer,
-      lang: "HTML e CSS",
-      desc: "Um aplicativo simples e interativo que gera números aleatórios de forma rápida e prática. Desenvolvido com foco em usabilidade, lógica de programação e interface intuitiva.",
-      repoLink: "https://github.com/Hugobertoncelo/Dev-Sorteio",
-      siteLink: "https://hugobertoncelo.github.io/Dev-Sorteio/",
+      title: "Pacman",
+      img: pacman,
+      lang: "Jogos",
+      desc: "Recriação do clássico Pac-Man em React, com pontuação e animações.",
+      repoLink: "https://github.com/Hugobertoncelo/Pacman",
+      siteLink: "https://pacman-one-pied.vercel.app/",
     },
   ];
 

@@ -1,29 +1,55 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
+import { FaCode } from "react-icons/fa";
 import ShowMoreButtons from "../../components/Button/ShowMoreButtons";
 
 export default function RepoLinks() {
   const repoLinks = [
     {
       id: 1,
-      title: "Estudos JavaScript",
-      repoLink: "https://github.com/Hugobertoncelo/estudos-js",
+      title: "Fundamentos de ReactJS",
+      repoLink: "https://github.com/Hugobertoncelo/01-fundamentos-reactjs-ts",
     },
     {
       id: 2,
-      title: "Portfólio Antigo",
-      repoLink: "https://github.com/Hugobertoncelo/portfolio-antigo",
+      title: "DevBills API",
+      repoLink: "https://github.com/Hugobertoncelo/DevBills-API",
     },
     {
       id: 3,
-      title: "Testes React Hooks",
-      repoLink: "https://github.com/Hugobertoncelo/react-hooks-tests",
+      title: "Ignite Timer",
+      repoLink: "https://github.com/Hugobertoncelo/02-ignite-timer",
     },
     {
       id: 4,
-      title: "Exercícios Lógica",
-      repoLink: "https://github.com/Hugobertoncelo/logica-js",
+      title: "DT Money",
+      repoLink: "https://github.com/Hugobertoncelo/03-dt-money",
+    },
+    {
+      id: 5,
+      title: "Ignite Shop",
+      repoLink: "https://github.com/Hugobertoncelo/04-ignite-shop",
+    },
+    {
+      id: 6,
+      title: "EliteTracker API",
+      repoLink: "https://github.com/Hugobertoncelo/elitetracker-api",
+    },
+    {
+      id: 7,
+      title: "Projeto Django Python",
+      repoLink: "https://github.com/Hugobertoncelo/cursos",
+    },
+    {
+      id: 8,
+      title: "Projeto Nearby - React Native",
+      repoLink: "https://github.com/Hugobertoncelo/nearby",
+    },
+    {
+      id: 9,
+      title: "Projeto Loja em Python",
+      repoLink: "https://github.com/Hugobertoncelo/loja",
     },
   ];
 
@@ -70,8 +96,12 @@ export default function RepoLinks() {
                 color: "#fbd9ad",
                 textDecoration: "none",
                 fontWeight: "bold",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "4px",
               }}
             >
+              <FaCode size={28} />
               Ver Repositório no GitHub
             </a>
           </div>
