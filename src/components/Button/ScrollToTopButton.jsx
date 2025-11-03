@@ -5,6 +5,7 @@ import { FaArrowUp } from "react-icons/fa";
 export default function ScrollToTopButton() {
   const [showButton, setShowButton] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -52,6 +53,8 @@ export default function ScrollToTopButton() {
       onPointerDown={handlePointer}
       onMouseDown={handlePointer}
       onTouchStart={handlePointer}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       aria-label="Voltar ao topo"
       style={{
         position: "fixed",
@@ -67,8 +70,12 @@ export default function ScrollToTopButton() {
         boxShadow: "0 6px 14px rgba(0,0,0,0.35)",
         zIndex: 2147483647,
         pointerEvents: "auto",
-        transition: "transform 180ms ease, opacity 180ms ease",
-        transform: "translateZ(0) translateY(0)",
+        transition:
+          "transform 180ms ease, opacity 180ms ease, filter 180ms ease",
+        transform: isHovered
+          ? "translateZ(0) translateY(-4px)"
+          : "translateZ(0) translateY(0)",
+        filter: isHovered ? "brightness(1.15)" : "brightness(1)",
         WebkitTapHighlightColor: "transparent",
         touchAction: "manipulation",
       }}
