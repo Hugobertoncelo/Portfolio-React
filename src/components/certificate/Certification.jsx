@@ -24,63 +24,6 @@ export default function Certification() {
                 <h1 className="aboutme-heading">Certificados</h1>
               </Zoom>
             </Col>
-            <Col ms={12} className="mt-3">
-              <Row className="g-5">
-                <Col md={14}>
-                  <Fade bottom duration={2000} distance="20px">
-                    <div className="cert-card">
-                      <div className="content">
-                        <a
-                          href={certificadoSenai}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <div className="content-overlay"></div>
-                          <div
-                            className="cert-header"
-                            style={{ backgroundColor: "white" }}
-                          >
-                            {
-                              <img
-                                className="logo_img"
-                                src={logoSenai}
-                                alt={logoSenai}
-                              />
-                            }
-                          </div>
-                          <div className="content-details fadeIn-top">
-                            <h3
-                              className="content-title"
-                              style={{ color: "black" }}
-                            >
-                              Certificado
-                            </h3>
-                          </div>
-                        </a>
-                      </div>
-                      <div className="cert-body">
-                        <h2
-                          className="cert-body-title"
-                          style={{ fontWeight: 700, color: "#fbd9ad" }}
-                        >
-                          Programador Web
-                        </h2>
-                        <h3
-                          className="cert-body-subtitle"
-                          style={{
-                            color: "#eb90ff",
-                            marginBottom: "0px",
-                            textDecoration: "underline",
-                          }}
-                        >
-                          Senai
-                        </h3>
-                      </div>
-                    </div>
-                  </Fade>
-                </Col>
-              </Row>
-            </Col>
 
             <Col ms={12} className="mt-3">
               <Row className="g-5">
@@ -132,6 +75,64 @@ export default function Certification() {
                           }}
                         >
                           Faesa
+                        </h3>
+                      </div>
+                    </div>
+                  </Fade>
+                </Col>
+              </Row>
+            </Col>
+
+            <Col ms={12} className="mt-3">
+              <Row className="g-5">
+                <Col md={14}>
+                  <Fade bottom duration={2000} distance="20px">
+                    <div className="cert-card">
+                      <div className="content">
+                        <a
+                          href={certificadoSenai}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <div className="content-overlay"></div>
+                          <div
+                            className="cert-header"
+                            style={{ backgroundColor: "white" }}
+                          >
+                            {
+                              <img
+                                className="logo_img"
+                                src={logoSenai}
+                                alt={logoSenai}
+                              />
+                            }
+                          </div>
+                          <div className="content-details fadeIn-top">
+                            <h3
+                              className="content-title"
+                              style={{ color: "black" }}
+                            >
+                              Certificado
+                            </h3>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="cert-body">
+                        <h2
+                          className="cert-body-title"
+                          style={{ fontWeight: 700, color: "#fbd9ad" }}
+                        >
+                          Programador Web
+                        </h2>
+                        <h3
+                          className="cert-body-subtitle"
+                          style={{
+                            color: "#eb90ff",
+                            marginBottom: "0px",
+                            textDecoration: "underline",
+                          }}
+                        >
+                          Senai
                         </h3>
                       </div>
                     </div>
