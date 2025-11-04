@@ -69,18 +69,18 @@ export default function Contactus() {
               <Zoom left cascade>
                 <h1
                   style={{
-                    backgroundColor: "#fbd9ad",
                     borderRadius: "15px",
                     padding: "5px 25px",
-                    color: "rgb(134 61 176)",
+                    color: "#fbd9ad",
                     marginTop: "170px",
-                    fontSize: "2rem",
+                    fontSize: "4rem",
                     textAlign: "center",
                     height: "54px",
                     width: "100%",
+                    fontWeight: "600",
                   }}
                 >
-                  ENTRE EM CONTATO
+                  Entre em Contato
                 </h1>
               </Zoom>
             </Col>
