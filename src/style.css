@@ -1458,6 +1458,13 @@ html {
   color: #742586;
   transition: 250ms ease-in-out;
   font-weight: 700;
+  border: none;
+}
+
+.submitBtn:hover {
+  background-color: #742586;
+  color: #fbd9ad;
+  transform: scale(1.05);
 }
 
 .send-icon {
