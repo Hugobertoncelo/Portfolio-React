@@ -45,7 +45,7 @@ export default function Projects() {
       <Container fluid className="certificate-section" id="about">
         <Container>
           <Row>
-            <Col md={12} className="d-flex justify-content-center">
+            <Col md={12} className="d-flex justify-content-center mt-4">
               <Zoom left cascade>
                 <h1 className="aboutme-heading">Projetos</h1>
               </Zoom>
