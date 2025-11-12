@@ -23,31 +23,26 @@ export default function RepoLinks() {
     },
     {
       id: 4,
-      title: "DT Money",
-      repoLink: "https://github.com/Hugobertoncelo/03-dt-money",
-    },
-    {
-      id: 5,
       title: "Ignite Shop",
       repoLink: "https://github.com/Hugobertoncelo/04-ignite-shop",
     },
     {
-      id: 6,
+      id: 5,
       title: "EliteTracker API",
       repoLink: "https://github.com/Hugobertoncelo/elitetracker-api",
     },
     {
-      id: 7,
+      id: 6,
       title: "Projeto Django Python",
       repoLink: "https://github.com/Hugobertoncelo/cursos",
     },
     {
-      id: 8,
+      id: 7,
       title: "Projeto Nearby - React Native",
       repoLink: "https://github.com/Hugobertoncelo/nearby",
     },
     {
-      id: 9,
+      id: 8,
       title: "Projeto Loja em Python",
       repoLink: "https://github.com/Hugobertoncelo/loja",
     },

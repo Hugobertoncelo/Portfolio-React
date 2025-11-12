@@ -33,6 +33,7 @@ import qrcode from "../../images/projects/qrcode.png";
 import campominado from "../../images/projects/campo-minado.png";
 import pacman from "../../images/projects/pacman.png";
 import chatbot from "../../images/projects/chatbot.png";
+import dtmoney from "../../images/projects/dtmoney.png";
 
 export const projects = [
   {
@@ -349,5 +350,14 @@ export const projects = [
     desc: "Durante o evento da Hashtag Treinamentos, desenvolvi um chatbot inteligente utilizando TypeScript e integração com Inteligência Artificial.",
     repoLink: "https://github.com/Hugobertoncelo/ChatBot",
     siteLink: "https://chat-bot-navy-one.vercel.app/",
+  },
+  {
+    id: 36,
+    title: "Dt Money",
+    img: dtmoney,
+    lang: "TypeScript",
+    desc: "Durante o evento da Hashtag Treinamentos, desenvolvi um chatbot inteligente utilizando TypeScript e integração com Inteligência Artificial.",
+    repoLink: "https://github.com/Hugobertoncelo/03-dt-money",
+    siteLink: "https://03-dt-money-fawn.vercel.app/",
   },
 ];
