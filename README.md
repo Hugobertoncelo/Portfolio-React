@@ -24,7 +24,7 @@ Paleta de cores inspirada em UI moderna com toques roxos e dourados
 
 Filtro dinâmico por tecnologia:
 
-JavaScript, TypeScript, Jogos, React, Python, Angular, HTML, CSS
+JavaScript, TypeScript, Jogos, React, Angular, HTML, CSS
 
 Cada card possui:
 

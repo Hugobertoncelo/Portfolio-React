@@ -24,7 +24,6 @@ export default function ProjectPage() {
     "React",
     "TypeScript",
     "Jogos",
-    "Python",
     "Angular",
     "HTML e CSS",
   ];

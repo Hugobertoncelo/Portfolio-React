@@ -32,6 +32,7 @@ import controleleite from "../../images/projects/controle-leite.png";
 import qrcode from "../../images/projects/qrcode.png";
 import campominado from "../../images/projects/campo-minado.png";
 import pacman from "../../images/projects/pacman.png";
+import chatbot from "../../images/projects/chatbot.png";
 
 export const projects = [
   {
@@ -339,5 +340,14 @@ export const projects = [
     desc: "Recriação do clássico Pac-Man em React, com pontuação e animações.",
     repoLink: "https://github.com/Hugobertoncelo/Pacman",
     siteLink: "https://pacman-one-pied.vercel.app/",
+  },
+  {
+    id: 35,
+    title: "ChatBot IA",
+    img: chatbot,
+    lang: "TypeScript",
+    desc: "Durante o evento da Hashtag Treinamentos, desenvolvi um chatbot inteligente utilizando TypeScript e integração com Inteligência Artificial.",
+    repoLink: "https://github.com/Hugobertoncelo/ChatBot",
+    siteLink: "https://chat-bot-navy-one.vercel.app/",
   },
 ];
