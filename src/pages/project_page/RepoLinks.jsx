@@ -18,31 +18,26 @@ export default function RepoLinks() {
     },
     {
       id: 3,
-      title: "Ignite Timer",
-      repoLink: "https://github.com/Hugobertoncelo/02-ignite-timer",
-    },
-    {
-      id: 4,
       title: "Ignite Shop",
       repoLink: "https://github.com/Hugobertoncelo/04-ignite-shop",
     },
     {
-      id: 5,
+      id: 4,
       title: "EliteTracker API",
       repoLink: "https://github.com/Hugobertoncelo/elitetracker-api",
     },
     {
-      id: 6,
+      id: 5,
       title: "Projeto Django Python",
       repoLink: "https://github.com/Hugobertoncelo/cursos",
     },
     {
-      id: 7,
+      id: 6,
       title: "Projeto Nearby - React Native",
       repoLink: "https://github.com/Hugobertoncelo/nearby",
     },
     {
-      id: 8,
+      id: 7,
       title: "Projeto Loja em Python",
       repoLink: "https://github.com/Hugobertoncelo/loja",
     },

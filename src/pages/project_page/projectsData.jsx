@@ -34,6 +34,7 @@ import campominado from "../../images/projects/campo-minado.png";
 import pacman from "../../images/projects/pacman.png";
 import chatbot from "../../images/projects/chatbot.png";
 import dtmoney from "../../images/projects/dtmoney.png";
+import ignite from "../../images/projects/ignite.png";
 
 export const projects = [
   {
@@ -359,5 +360,14 @@ export const projects = [
     desc: "Durante o evento da Hashtag Treinamentos, desenvolvi um chatbot inteligente utilizando TypeScript e integração com Inteligência Artificial.",
     repoLink: "https://github.com/Hugobertoncelo/03-dt-money",
     siteLink: "https://03-dt-money-fawn.vercel.app/",
+  },
+  {
+    id: 37,
+    title: "Ignite Timer",
+    img: ignite,
+    lang: "TypeScript",
+    desc: "",
+    repoLink: "https://github.com/Hugobertoncelo/02-ignite-timer",
+    siteLink: "https://02-ignite-timer-livid.vercel.app/",
   },
 ];
