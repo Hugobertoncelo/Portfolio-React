@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
 import certificadoSenai from "../../images/certificates/certificates/Senai/senai1.pdf";
 import certificadoDevClub from "../../images/certificates/certificates/DevClub/devclub1.pdf";
+import certificadoFaesa from "../../images/certificates/certificates/Faesa/faesa11.pdf";
 
 export default function Certification() {
   return (
@@ -32,7 +33,7 @@ export default function Certification() {
                     <div className="cert-card">
                       <div className="content">
                         <a
-                          href={certificadoSenai}
+                          href={certificadoFaesa}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
