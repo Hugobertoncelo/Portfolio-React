@@ -35,6 +35,7 @@ import pacman from "../../images/projects/pacman.png";
 import chatbot from "../../images/projects/chatbot.png";
 import dtmoney from "../../images/projects/dtmoney.png";
 import ignite from "../../images/projects/ignite.png";
+import chatreal from "../../images/projects/chatreal.png";
 
 export const projects = [
   {
@@ -369,5 +370,14 @@ export const projects = [
     desc: "Projeto concluído no Ignite da Rocketseat, agora utilizando TypeScript, React e boas práticas que elevaram meu nível no desenvolvimento front-end.",
     repoLink: "https://github.com/Hugobertoncelo/02-ignite-timer",
     siteLink: "https://02-ignite-timer-livid.vercel.app/",
+  },
+  {
+    id: 38,
+    title: "Chat em Tempo Real",
+    img: chatreal,
+    lang: "TypeScript",
+    desc: "Este projeto é um sistema completo de chat em tempo real, desenvolvido em arquitetura monorepo, integrando front-end, back-end e bibliotecas compartilhadas em um único repositório, com foco em experiência do usuário e organização de código.",
+    repoLink: "https://github.com/Hugobertoncelo/Projetofullstack",
+    siteLink: "https://chat-frontend-2a0i.onrender.com/",
   },
 ];
