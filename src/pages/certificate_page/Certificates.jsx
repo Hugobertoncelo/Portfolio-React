@@ -29,6 +29,7 @@ import rocket1 from "../../images/certificates/certificates/Rocketseat/rocket1.p
 import rocket2 from "../../images/certificates/certificates/Rocketseat/rocket2.pdf";
 import rocket3 from "../../images/certificates/certificates/Rocketseat/rocket3.pdf";
 import rocket4 from "../../images/certificates/certificates/Rocketseat/rocket4.pdf";
+import rocket5 from "../../images/certificates/certificates/Rocketseat/rocket5.pdf";
 import udemy1 from "../../images/certificates/certificates/Udemy/udemy1.pdf";
 import faesa1 from "../../images/certificates/certificates/Faesa/faesa1.pdf";
 import faesa2 from "../../images/certificates/certificates/Faesa/faesa2.pdf";
@@ -305,5 +306,13 @@ export const certificates = [
     img: logoFaesa,
     category: "Faesa",
     link: faesa10,
+  },
+  {
+    id: 34,
+    title: "Imersão Desenvolvimento e Automação com IA - Build & Automate",
+    org: "Rocketseat",
+    img: logoRocketseat,
+    category: "Rocketseat",
+    link: rocket5,
   },
 ];
