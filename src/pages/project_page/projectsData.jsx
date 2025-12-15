@@ -36,6 +36,7 @@ import chatbot from "../../images/projects/chatbot.png";
 import dtmoney from "../../images/projects/dtmoney.png";
 import ignite from "../../images/projects/ignite.png";
 import chatreal from "../../images/projects/chatreal.png";
+import applewatch from "../../images/projects/applewatch.png";
 
 export const projects = [
   {
@@ -379,5 +380,14 @@ export const projects = [
     desc: "Este projeto é um sistema completo de chat em tempo real, desenvolvido em arquitetura monorepo, integrando front-end, back-end e bibliotecas compartilhadas em um único repositório, com foco em experiência do usuário e organização de código.",
     repoLink: "https://github.com/Hugobertoncelo/Projetofullstack",
     siteLink: "https://chat-frontend-2a0i.onrender.com/",
+  },
+  {
+    id: 39,
+    title: "Réplica do site Apple",
+    img: applewatch,
+    lang: "HTML e CSS",
+    desc: "Réplica do site de pulseiras Apple desenvolvida com HTML, CSS e JavaScript, com foco em fidelidade visual, responsividade e uma experiência de usuário fluida.",
+    repoLink: "https://github.com/Hugobertoncelo/AppleWatch",
+    siteLink: "https://hugobertoncelo.github.io/AppleWatch/",
   },
 ];
