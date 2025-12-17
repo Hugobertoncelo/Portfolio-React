@@ -37,6 +37,7 @@ import dtmoney from "../../images/projects/dtmoney.png";
 import ignite from "../../images/projects/ignite.png";
 import chatreal from "../../images/projects/chatreal.png";
 import applewatch from "../../images/projects/applewatch.png";
+import audiobook from "../../images/projects/audiobook.png";
 
 export const projects = [
   {
@@ -389,5 +390,14 @@ export const projects = [
     desc: "Réplica do site de pulseiras Apple desenvolvida com HTML, CSS e JavaScript, com foco em fidelidade visual, responsividade e uma experiência de usuário fluida.",
     repoLink: "https://github.com/Hugobertoncelo/AppleWatch",
     siteLink: "https://hugobertoncelo.github.io/AppleWatch/",
+  },
+  {
+    id: 40,
+    title: "Audiobook Dom Casmurro",
+    img: audiobook,
+    lang: "HTML e CSS",
+    desc: "Aplicação web construída com HTML, CSS e JavaScript, incluindo player de áudio, controle de capítulos e layout responsivo para consumir literatura de forma moderna.",
+    repoLink: "https://github.com/Hugobertoncelo/Audiobook",
+    siteLink: "https://hugobertoncelo.github.io/Audiobook/",
   },
 ];
