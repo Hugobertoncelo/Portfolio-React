@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
 import workshop from "../../images/projects/oficina.png";
-import controleleite from "../../images/projects/controle-leite.png";
+import babycontrol from "../../images/projects/babycontrol.png";
 import pacman from "../../images/projects/pacman.png";
 import { FaCode, FaGlobe } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -22,12 +22,12 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: "Controle de Consumo de Leite Infantil",
-      img: controleleite,
+      title: "Baby Control",
+      img: babycontrol,
       lang: "TypeScript",
-      desc: "Aplicação em React para controle do consumo diário de leite infantil.",
-      repoLink: "https://github.com/Hugobertoncelo/Control-Milk",
-      siteLink: "https://control-milk.vercel.app/",
+      desc: "Aplicação de controle de bebê construída com TypeScript, priorizando tipagem forte, organização de estados e escalabilidade. Inclui funcionalidades como registro de mamadas, trocas de fraldas, medicamentos e acompanhamento de rotinas.",
+      repoLink: "https://github.com/Hugobertoncelo/Baby-control",
+      siteLink: "https://baby-control.netlify.app/",
     },
     {
       id: 3,

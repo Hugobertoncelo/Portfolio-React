@@ -38,6 +38,7 @@ import ignite from "../../images/projects/ignite.png";
 import chatreal from "../../images/projects/chatreal.png";
 import applewatch from "../../images/projects/applewatch.png";
 import audiobook from "../../images/projects/audiobook.png";
+import babycontrol from "../../images/projects/babycontrol.png";
 
 export const projects = [
   {
@@ -399,5 +400,14 @@ export const projects = [
     desc: "Aplicação web construída com HTML, CSS e JavaScript, incluindo player de áudio, controle de capítulos e layout responsivo para consumir literatura de forma moderna.",
     repoLink: "https://github.com/Hugobertoncelo/Audiobook",
     siteLink: "https://hugobertoncelo.github.io/Audiobook/",
+  },
+  {
+    id: 41,
+    title: "Baby Control",
+    img: babycontrol,
+    lang: "TypeScript",
+    desc: "Aplicação de controle de bebê construída com TypeScript, priorizando tipagem forte, organização de estados e escalabilidade. Inclui funcionalidades como registro de mamadas, trocas de fraldas, medicamentos e acompanhamento de rotinas.",
+    repoLink: "https://github.com/Hugobertoncelo/Baby-control",
+    siteLink: "https://baby-control.netlify.app/",
   },
 ];
