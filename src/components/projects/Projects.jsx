@@ -4,7 +4,7 @@ import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
 import workshop from "../../images/projects/oficina.png";
 import babycontrol from "../../images/projects/babycontrol.png";
-import pacman from "../../images/projects/pacman.png";
+import primegestor from "../../images/projects/primegestor.png";
 import { FaCode, FaGlobe } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
@@ -31,12 +31,12 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: "Pacman",
-      img: pacman,
-      lang: "Jogos",
-      desc: "Recriação do clássico Pac-Man em React, com pontuação e animações.",
-      repoLink: "https://github.com/Hugobertoncelo/Pacman",
-      siteLink: "https://pacman-one-pied.vercel.app/",
+      title: "Prime Gestor",
+      img: primegestor,
+      lang: "TypeScript",
+      desc: "Sistema de Controle de Estoque e Vendas desenvolvido em TypeScript, focado em desempenho, organização e escalabilidade. Gerenciamento de produtos, entradas, saídas, vendas e relatórios, com arquitetura pronta para produção.",
+      repoLink: "https://github.com/Hugobertoncelo/Stock-Control",
+      siteLink: "https://stock-control-one.vercel.app/",
     },
   ];
 

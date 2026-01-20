@@ -39,6 +39,7 @@ import chatreal from "../../images/projects/chatreal.png";
 import applewatch from "../../images/projects/applewatch.png";
 import audiobook from "../../images/projects/audiobook.png";
 import babycontrol from "../../images/projects/babycontrol.png";
+import primegestor from "../../images/projects/primegestor.png";
 
 export const projects = [
   {
@@ -409,5 +410,14 @@ export const projects = [
     desc: "Aplicação de controle de bebê construída com TypeScript, priorizando tipagem forte, organização de estados e escalabilidade. Inclui funcionalidades como registro de mamadas, trocas de fraldas, medicamentos e acompanhamento de rotinas.",
     repoLink: "https://github.com/Hugobertoncelo/Baby-control",
     siteLink: "https://baby-control.netlify.app/",
+  },
+  {
+    id: 42,
+    title: "Prime Gestor",
+    img: primegestor,
+    lang: "TypeScript",
+    desc: "Sistema de Controle de Estoque e Vendas desenvolvido em TypeScript, focado em desempenho, organização e escalabilidade. Gerenciamento de produtos, entradas, saídas, vendas e relatórios, com arquitetura pronta para produção.",
+    repoLink: "https://github.com/Hugobertoncelo/Stock-Control",
+    siteLink: "https://stock-control-one.vercel.app/",
   },
 ];
